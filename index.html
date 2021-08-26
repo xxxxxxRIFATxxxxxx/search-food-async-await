@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Search Food Async Await" />
+    <meta name="keywords" content="Search, Food, Async, Await" />
+    <meta name="author" content="Md. Rifat Islam" />
+
+    <!-- Title -->
+    <title>Search Food Async Await</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="images/orange-flat.png" type="image/gif" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <style>
+        .card {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main -->
+    <main class="container">
+        <!-- Search Section -->
+        <div class="mt-4">
+            <h1 class="display-5 text-success fw-bold text-center mb-3">Search your favorite food</h1>
+            <input type="text" id="search-text" class="form-control w-50 m-auto mb-2"
+                placeholder="Search the food you want">
+            <div class="text-center">
+                <button class="btn btn-success w-50" id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <!-- Error Section -->
+        <div id="error-container"></div>
+
+        <!-- Spiner Section -->
+        <div class="text-center mt-4 d-none" id="spinner">
+            <div class="spinner-border text-success" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+        <!-- Single Food Section -->
+        <div class="row row-cols-1 row-cols-md-1 g-4 mt-4" id="single-food">
+
+        </div>
+
+        <!-- Foods Section -->
+        <div class="row row-cols-1 row-cols-md-3 g-4 mt-4" id="food-container"></div>
+    </main>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!-- External Script -->
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
